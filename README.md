@@ -50,3 +50,6 @@ Visualizing KPI trends for optimization reports
 
 # 🎓 Acknowledgements
 This project was developed as part of a graduation project in telecom optimization using data analytics, sponsored by Vodafone.
+
+# ⚠️ Note
+Input and output data are excluded since they contain sensitive information.
