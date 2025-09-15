@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1094</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(244, 244, 244);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-5</y>
+      <width>281</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exports_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Drive test exports</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/file-export.png</normaloff>../../../Downloads/file-export.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="insights_button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>KPI insights</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/kpi-evaluation (1).png</normaloff>../../../Downloads/kpi-evaluation (1).png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="classification_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Problem classification</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/problem-solving.png</normaloff>../../../Downloads/problem-solving.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actions_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Recommended actions</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/decision-choice.png</normaloff>../../../Downloads/decision-choice.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>60</y>
+      <width>481</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Century Gothic&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Spots with Overshooting Problem</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bad_coverage_button">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>0</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #FFCCCC;            /* Light red background */
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(214, 32, 0);               /* Deep red text to match border */
+    border-radius: 10px;
+    border: 2px solid rgb(214, 32, 0);    /* Red outline */
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+    background-color: #FF9999;            /* Slightly darker red when pressed */
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;            /* Lighter red on hover */
+    border-color: rgb(230, 50, 20);       /* Slightly brighter red border */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Bad Coverage</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Handover_Button">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>0</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Hand-Over</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Overlapping_button">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>0</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #FFCCCC;            /* Light red background */
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(214, 32, 0);               /* Deep red text to match border */
+    border-radius: 10px;
+    border: 2px solid rgb(214, 32, 0);    /* Red outline */
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+    background-color: #FF9999;            /* Slightly darker red when pressed */
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;            /* Lighter red on hover */
+    border-color: rgb(230, 50, 20);       /* Slightly brighter red border */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Overlapping</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OvershootingButton">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>0</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Overshooting</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Highload_button">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>0</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #FFCCCC;            /* Light red background */
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(214, 32, 0);               /* Deep red text to match border */
+    border-radius: 10px;
+    border: 2px solid rgb(214, 32, 0);    /* Red outline */
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+    background-color: #FF9999;            /* Slightly darker red when pressed */
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;            /* Lighter red on hover */
+    border-color: rgb(230, 50, 20);       /* Slightly brighter red border */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>High Load</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>299</x>
+      <y>119</y>
+      <width>771</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>767</width>
+          <height>557</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Horizontal ScrollBar */
+QScrollBar:horizontal {
+    border: none;
+    background: #f0f0f0;
+    height: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #e60000;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #cc0000;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+/* Vertical ScrollBar */
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #e60000;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #cc0000;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/* Remove QFrame border (optional for scroll areas) */
+QFrame {
+    border: none;
+    background: transparent;
+}
+</string>
+        </property>
+        <widget class="QWidget" name="badCoverageListContainer" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>751</width>
+           <height>541</height>
+          </rect>
+         </property>
+         <widget class="QTableWidget" name="OvershootingTable">
+          <property name="geometry">
+           <rect>
+            <x>5</x>
+            <y>1</y>
+            <width>741</width>
+            <height>531</height>
+           </rect>
+          </property>
+          <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Spot_Area_Num </string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>See Recommendations</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>See on Map</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Britannic Bold</family>
+      <pointsize>34</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(214, 32, 0);
+font: 34pt &quot;Britannic Bold&quot;;
+background-color: rgb(255, 255, 255);
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;ADAPT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>560</y>
+      <width>241</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Vodafone-Logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1094</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

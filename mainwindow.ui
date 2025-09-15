@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1093</width>
+    <height>829</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(244, 244, 244);
+</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Britannic Bold</family>
+      <pointsize>34</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(214, 32, 0);
+font: 34pt &quot;Britannic Bold&quot;;
+background-color: rgb(255, 255, 255);
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;ADAPT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-5</y>
+      <width>281</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exports_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Drive test exports</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/file-export.png</normaloff>../../../Downloads/file-export.png</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="insights_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>KPI insights</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/kpi-evaluation (1).png</normaloff>../../../Downloads/kpi-evaluation (1).png</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="classification_button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Problem classification</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/problem-solving.png</normaloff>../../../Downloads/problem-solving.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actions_button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Recommended actions</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/decision-choice.png</normaloff>../../../Downloads/decision-choice.png</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>30</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Century Gothic&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Download KPI template</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_button">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>40</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(180, 27, 0);
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Download</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/download.png</normaloff>../../../Downloads/download.png</iconset>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>110</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Century Gothic&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Upload Drive Test File</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="upload_drivetest_line">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>180</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 8pt &quot;Century Gothic&quot;;</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="browse1_button">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>180</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #FFCCCC;            /* Light red background */
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(214, 32, 0);               /* Deep red text to match border */
+    border-radius: 10px;
+    border: 2px solid rgb(214, 32, 0);    /* Red outline */
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+    background-color: #FF9999;            /* Slightly darker red when pressed */
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;            /* Lighter red on hover */
+    border-color: rgb(230, 50, 20);       /* Slightly brighter red border */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/document-circle-arrow-up.png</normaloff>../../../Downloads/document-circle-arrow-up.png</iconset>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>240</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Century Gothic&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Upload Cell File</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="upload_cellfile_line">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>310</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 8pt &quot;Century Gothic&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Leave Empty to use default Cell file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="browse2_button">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>310</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #FFCCCC;            /* Light red background */
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(214, 32, 0);               /* Deep red text to match border */
+    border-radius: 10px;
+    border: 2px solid rgb(214, 32, 0);    /* Red outline */
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+    background-color: #FF9999;            /* Slightly darker red when pressed */
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;            /* Lighter red on hover */
+    border-color: rgb(230, 50, 20);       /* Slightly brighter red border */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/document-circle-arrow-up.png</normaloff>../../../Downloads/document-circle-arrow-up.png</iconset>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="predefined_button">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>520</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(180, 27, 0);
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Predefined Thresholds</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/artificial-intelligence.png</normaloff>../../../Downloads/artificial-intelligence.png</iconset>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="set_thresholds_button">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>520</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(180, 27, 0);
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Set Thresholds</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/algorithm.png</normaloff>../../../Downloads/algorithm.png</iconset>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>520</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Century Gothic&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>or</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Run_button">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>600</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #FFCCCC;            /* Light red background */
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(214, 32, 0);               /* Deep red text to match border */
+    border-radius: 10px;
+    border: 2px solid rgb(214, 32, 0);    /* Red outline */
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+    background-color: #FF9999;            /* Slightly darker red when pressed */
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;            /* Lighter red on hover */
+    border-color: rgb(230, 50, 20);       /* Slightly brighter red border */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Run Analysis</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/play.png</normaloff>../../../Downloads/play.png</iconset>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Run_button_2">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>640</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(180, 27, 0);
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="contentFrame">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>771</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+      QFrame#contentFrame {
+       background-color: white;
+       border-radius: 15px;
+      }
+     </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>560</y>
+      <width>241</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Vodafone-Logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="upload_RBs_line">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>440</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 8pt &quot;Century Gothic&quot;;</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Leave Empty to use default Utilization file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="browse3_button">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>440</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #FFCCCC;            /* Light red background */
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(214, 32, 0);               /* Deep red text to match border */
+    border-radius: 10px;
+    border: 2px solid rgb(214, 32, 0);    /* Red outline */
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+    background-color: #FF9999;            /* Slightly darker red when pressed */
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;            /* Lighter red on hover */
+    border-color: rgb(230, 50, 20);       /* Slightly brighter red border */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/document-circle-arrow-up.png</normaloff>../../../Downloads/document-circle-arrow-up.png</iconset>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>370</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Century Gothic&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Upload RBs Utilization File</string>
+    </property>
+   </widget>
+   <zorder>contentFrame</zorder>
+   <zorder>upload_RBs_line</zorder>
+   <zorder>browse3_button</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>exports_button</zorder>
+   <zorder>insights_button</zorder>
+   <zorder>classification_button</zorder>
+   <zorder>actions_button</zorder>
+   <zorder>label_3</zorder>
+   <zorder>download_button</zorder>
+   <zorder>label_4</zorder>
+   <zorder>upload_drivetest_line</zorder>
+   <zorder>label_5</zorder>
+   <zorder>upload_cellfile_line</zorder>
+   <zorder>browse2_button</zorder>
+   <zorder>predefined_button</zorder>
+   <zorder>set_thresholds_button</zorder>
+   <zorder>label_6</zorder>
+   <zorder>browse1_button</zorder>
+   <zorder>Run_button</zorder>
+   <zorder>Run_button_2</zorder>
+   <zorder>label_7</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1093</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Run_button_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>990</x>
+     <y>684</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>983</x>
+     <y>760</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

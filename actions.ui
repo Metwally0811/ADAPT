@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(244, 244, 244);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(214, 32, 0);
+font: 34pt &quot;Britannic Bold&quot;;
+background-color: rgb(255, 255, 255);
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>ADAPT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-5</y>
+      <width>281</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exports_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Drive test exports</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="insights_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>KPI insights</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="classification_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Problem classification</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actions_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Recommended actions</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Overlapping_button">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>0</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Overlapping</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Highload_button">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>0</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>High Load</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bad_coverage_button">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>0</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(214, 32, 0);
+    font: 75 11pt &quot;Century Gothic&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
+
+QPushButton:hover {
+    background-color: rgb(230, 50, 20);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Bad Coverage</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>exports_button</zorder>
+   <zorder>insights_button</zorder>
+   <zorder>classification_button</zorder>
+   <zorder>actions_button</zorder>
+   <zorder>Overlapping_button</zorder>
+   <zorder>Highload_button</zorder>
+   <zorder>bad_coverage_button</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

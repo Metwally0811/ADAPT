@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(244, 244, 244);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-5</y>
+      <width>281</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exports_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Drive test exports</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/file-export.png</normaloff>../../../Downloads/file-export.png</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="insights_button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>KPI insights</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/kpi-evaluation (1).png</normaloff>../../../Downloads/kpi-evaluation (1).png</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="classification_button">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Problem classification</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/problem-solving.png</normaloff>../../../Downloads/problem-solving.png</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actions_button">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(255, 230, 230); /* light faded red */
+    font: 10pt &quot;Century Gothic&quot;;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(250, 200, 200); /* slightly deeper red when hovering */
+}
+
+QPushButton:pressed {
+    background-color: rgb(240, 180, 180); /* deeper red when pressed */
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Recommended actions</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/decision-choice.png</normaloff>../../../Downloads/decision-choice.png</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>781</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    border: none;
+    background: transparent;
+}</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>781</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <widget class="QPushButton" name="HighLoad_button">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #FFCCCC;             /* Light red background */
+    color: #B30000;                        /* Deep red text */
+    font-size: 22px;                       /* Bigger font */
+    font-family: &quot;Segoe UI&quot;, &quot;Verdana&quot;, sans-serif;  /* Stylish modern font */
+    font-weight: 600;                      /* Semi-bold */
+    border: 3px solid #E60000;             /* Vodafone red border */
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 10px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;             /* Lighter red on hover */
+    border-color: #CC0000;
+}
+
+QPushButton:pressed {
+    background-color: #FF9999;
+    border-color: #990000;
+    padding-left: 22px;
+    padding-top: 22px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>High Load</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="Overlapping_button_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #FFCCCC;             /* Light red background */
+    color: #B30000;                        /* Deep red text */
+    font-size: 22px;                       /* Bigger font */
+    font-family: &quot;Segoe UI&quot;, &quot;Verdana&quot;, sans-serif;  /* Stylish modern font */
+    font-weight: 600;                      /* Semi-bold */
+    border: 3px solid #E60000;             /* Vodafone red border */
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 10px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;             /* Lighter red on hover */
+    border-color: #CC0000;
+}
+
+QPushButton:pressed {
+    background-color: #FF9999;
+    border-color: #990000;
+    padding-left: 22px;
+    padding-top: 22px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Overlapping</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="bad_coverage_button">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #FFCCCC;             /* Light red background */
+    color: #B30000;                        /* Deep red text */
+    font-size: 22px;                       /* Bigger font */
+    font-family: &quot;Segoe UI&quot;, &quot;Verdana&quot;, sans-serif;  /* Stylish modern font */
+    font-weight: 600;                      /* Semi-bold */
+    border: 3px solid #E60000;             /* Vodafone red border */
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 10px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #FFE5E5;             /* Lighter red on hover */
+    border-color: #CC0000;
+}
+
+QPushButton:pressed {
+    background-color: #FF9999;
+    border-color: #990000;
+    padding-left: 22px;
+    padding-top: 22px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Bad Coverage</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="titleLabel">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>30</y>
+      <width>481</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI,Arial,sans-serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #e60000; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Map View of Recommendations &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Britannic Bold</family>
+      <pointsize>34</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(214, 32, 0);
+font: 34pt &quot;Britannic Bold&quot;;
+background-color: rgb(255, 255, 255);
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;ADAPT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>560</y>
+      <width>241</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Vodafone-Logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
